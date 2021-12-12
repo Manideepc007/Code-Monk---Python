@@ -1,0 +1,6 @@
+testCase  = int(input())  ##calling the input
+for i in range(testCase): ##loop through the n test cases 
+    n,k = map(int,input().split()) ## calling n,k 
+    l = list(map(int,input().split())) ## calling the variables.
+    x = k%n ## swifts ex: 5 % 2 = 2. so, we need only 2 swift to do instead of 5.
+    print(*(l[n-x:]+l[:n-x])) ## here '*' makes the list into raw_input.
